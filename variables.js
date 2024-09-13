@@ -48,3 +48,33 @@ console.log(`2 + 3.14 = ${sumOfTwoNumbers} [${typeof sumOfTwoNumbers}]`);
 console.log(`43n + 98765432109876543210n = ${sumOfTwoBigInts} [${typeof sumOfTwoBigInts}]`);
 console.log(`'123' + '456' = ${sumOfTwoStrings} [${typeof sumOfTwoStrings}]`);
 console.log(`undefined + undefined = ${sumOfTwoUndefineds} [${typeof sumOfTwoUndefineds}]`);
+
+// Question 5: Try adding two values of different types and check the results.
+
+let sumOfBooleanAndNumber = true + 3.14;
+// let sumOfBooleanAndBigInt = true + 43n; // -> error
+let sumOfBooleanAndString = true + '456';
+let sumOfBooleanAndUndefined = true + undefined;
+
+console.log(`true + 3.14 = ${sumOfBooleanAndNumber} [${typeof sumOfBooleanAndNumber}]`);
+// console.log(`true + 43n = ${sumOfBooleanAndBigInt} [${typeof sumOfBooleanAndBigInt}]`); // -> error
+console.log(`true + '456' = ${sumOfBooleanAndString} [${typeof sumOfBooleanAndString}]`);
+console.log(`true + undefined = ${sumOfBooleanAndUndefined} [${typeof sumOfBooleanAndUndefined}]`);
+
+// let sumOfNumberAndBigInt = 3.14 + 10n; // -> error
+let sumOfNumberAndString = 3.14 + '456';
+let sumOfNumberAndUndefined = 3.14 + undefined;
+
+// console.log(`3.14 + 10n = ${sumOfNumberAndBigInt} [${typeof sumOfNumberAndBigInt}]`); // -> error
+console.log(`3.14 + '456' = ${sumOfNumberAndString} [${typeof sumOfNumberAndString}]`);
+console.log(`3.14 + undefined = ${sumOfNumberAndUndefined} [${typeof sumOfNumberAndUndefined}]`);
+
+let sumOfBigIntAndString = 10n + '456';
+// let sumOfBigIntAndUndefined = 10n + undefined; // -> error
+
+console.log(`10n + '456' = ${sumOfBigIntAndString} [${typeof sumOfBigIntAndString}]`);
+// console.log(`10n + undefined = ${sumOfBigIntAndUndefined} [${typeof sumOfBigIntAndUndefined}]`); // -> error
+
+let sumOfStringAndUndefined = '456' + undefined;
+
+console.log(`'456' + undefined = ${sumOfStringAndUndefined} [${typeof sumOfStringAndUndefined}]`);
