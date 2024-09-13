@@ -29,3 +29,8 @@ console.log(`${s1} [${typeof s1}]`);
 console.log(`${s2} [${typeof s2}]`);
 
 console.log(`${un} [${typeof un}]`);
+
+// Question 3: Carry out a chain of conversions: create a Boolean from a BigInt created from a Number that was created from a String. Start with the value "1234". Is it possible?
+
+let b = Boolean(BigInt(Number("1234")));
+console.log(`${b} [${typeof b}]`);
