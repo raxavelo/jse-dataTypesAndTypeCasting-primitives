@@ -34,3 +34,17 @@ console.log(`${un} [${typeof un}]`);
 
 let b = Boolean(BigInt(Number("1234")));
 console.log(`${b} [${typeof b}]`);
+
+// Question 4: Try adding two values of the same type and check the result type. Try it for all primitive types.
+
+let sumOfTwoBooleans = true + false;
+let sumOfTwoNumbers = 2 + 3.14;
+let sumOfTwoBigInts = 43n + 98765432109876543210n;
+let sumOfTwoStrings = '123' + '456';
+let sumOfTwoUndefineds = undefined + undefined;
+
+console.log(`true + false = ${sumOfTwoBooleans} [${typeof sumOfTwoBooleans}]`);
+console.log(`2 + 3.14 = ${sumOfTwoNumbers} [${typeof sumOfTwoNumbers}]`);
+console.log(`43n + 98765432109876543210n = ${sumOfTwoBigInts} [${typeof sumOfTwoBigInts}]`);
+console.log(`'123' + '456' = ${sumOfTwoStrings} [${typeof sumOfTwoStrings}]`);
+console.log(`undefined + undefined = ${sumOfTwoUndefineds} [${typeof sumOfTwoUndefineds}]`);
