@@ -78,3 +78,8 @@ console.log(`10n + '456' = ${sumOfBigIntAndString} [${typeof sumOfBigIntAndStrin
 let sumOfStringAndUndefined = '456' + undefined;
 
 console.log(`'456' + undefined = ${sumOfStringAndUndefined} [${typeof sumOfStringAndUndefined}]`);
+
+// Question 6: Try to modify the line const str1 = 42 + "1"; to get the result 43 (without removing the quotes around 1).
+
+const str1 = 42 + +"1";
+console.log(str1); // -> 43
